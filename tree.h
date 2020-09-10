@@ -23,6 +23,11 @@ using TreePtr = std::shared_ptr<Tree<T>>;
 template <typename T>
 using NodePtr = std::shared_ptr<const Node<T>>;
 
+/*!
+ * Inspired by mozilla's [Variant] example.
+ *
+ * [Variant]: https://github.com/mozilla/gecko-dev/blob/master/mfbt/Variant.h#L507
+ */
 template <typename T>
 class Node
 {
