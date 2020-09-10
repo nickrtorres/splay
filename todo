@@ -1,0 +1,26 @@
+Key
+---
+??? => Maybe
+
+General
+---
+- Implement a nice (ish) tree API in modern (ish) C++
+    - [ ] Insert
+          - Insert from vector (???)
+              - Tree<uint32_t> t1 = { 1, 2, 3, 4 };
+              - Tree<uint32_t> t2 = { 5, 6, 7, 8 };
+              - t1.Insert(t2.AsVec()); O(Cn)
+    - [ ] Remove
+    - [ ] Search
+    - [ ] Construct from vector
+          - e.g. Tree t = { 1, 325,123, 235231 , 1341 };
+    - [ ] Turn into vector
+          - e.g. Tree<uint32_t> t = { 1, 2, 3, 4 }; std::vector<uint32_t> v = t.AsVec();
+    - [ ] use std::visit where possible
+
+Splay
+---
+- Splaying
+    - [ ] Zig step
+    - [ ] Zig-zig step
+    - [ ] Zig-zag step
